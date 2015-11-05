@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +24,12 @@ namespace WpfApplication1
         public MainWindow()
         {
             InitializeComponent();
+        }
+        private void click1(object sender, RoutedEventArgs e)
+        {
+            Debug.WriteLine(sender);
+            Button button = sender as Button;
+            button.Background = Brushes.Blue;
         }
     }
 }

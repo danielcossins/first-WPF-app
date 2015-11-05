@@ -7,8 +7,10 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
-        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center">
-            Hello World
-        </TextBlock>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Width="200">
+            <Button Name="MyButton" Content="Click Me" Click="click1" Height="40"></Button>
+            <Button Content="Click Me" Click="click1" Height="40"></Button>
+            <Button Content="Click Me" Click="click1" Height="40"></Button>
+        </StackPanel>
     </Grid>
 </Window>
